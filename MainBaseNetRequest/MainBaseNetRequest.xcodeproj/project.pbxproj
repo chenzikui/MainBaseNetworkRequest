@@ -15,9 +15,9 @@
 		E75FD4731E70F11F002D443D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E75FD4721E70F11F002D443D /* Assets.xcassets */; };
 		E75FD4761E70F11F002D443D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75FD4741E70F11F002D443D /* LaunchScreen.storyboard */; };
 		E75FD4801E7131E3002D443D /* MainBaseNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E75FD47F1E7131E3002D443D /* MainBaseNetworkRequest.m */; };
-		E763CC2D1E7BCBF900602986 /* GiFHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E763CC2C1E7BCBF900602986 /* GiFHUD.m */; };
-		E763CC2F1E7BD6B100602986 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = E763CC2E1E7BD6B100602986 /* loading.gif */; };
 		E763CC341E7BD74600602986 /* RequestTestService.m in Sources */ = {isa = PBXBuildFile; fileRef = E763CC331E7BD74600602986 /* RequestTestService.m */; };
+		E7D0A3651E8227970020F579 /* GiFHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D0A3631E8227970020F579 /* GiFHUD.m */; };
+		E7D0A3661E8227970020F579 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = E7D0A3641E8227970020F579 /* loading.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,11 +35,11 @@
 		E75FD4771E70F11F002D443D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E75FD47E1E7131E3002D443D /* MainBaseNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainBaseNetworkRequest.h; sourceTree = "<group>"; };
 		E75FD47F1E7131E3002D443D /* MainBaseNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainBaseNetworkRequest.m; sourceTree = "<group>"; };
-		E763CC2B1E7BCBF900602986 /* GiFHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiFHUD.h; sourceTree = "<group>"; };
-		E763CC2C1E7BCBF900602986 /* GiFHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiFHUD.m; sourceTree = "<group>"; };
-		E763CC2E1E7BD6B100602986 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		E763CC321E7BD74600602986 /* RequestTestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestTestService.h; sourceTree = "<group>"; };
 		E763CC331E7BD74600602986 /* RequestTestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestTestService.m; sourceTree = "<group>"; };
+		E7D0A3621E8227970020F579 /* GiFHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiFHUD.h; sourceTree = "<group>"; };
+		E7D0A3631E8227970020F579 /* GiFHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiFHUD.m; sourceTree = "<group>"; };
+		E7D0A3641E8227970020F579 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		F0E08247D37C08A7C92DAB84 /* Pods-MainBaseNetRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainBaseNetRequest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MainBaseNetRequest/Pods-MainBaseNetRequest.release.xcconfig"; sourceTree = "<group>"; };
 		F3CC791EB2FFBC047939504F /* libPods-MainBaseNetRequest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MainBaseNetRequest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -94,7 +94,6 @@
 		E75FD4651E70F11F002D443D /* MainBaseNetRequest */ = {
 			isa = PBXGroup;
 			children = (
-				E763CC2A1E7BCBF900602986 /* DHBGIFHUD */,
 				E75FD47D1E7131A7002D443D /* 封装 */,
 				E763CC311E7BD6CF00602986 /* TestFiles */,
 				E75FD4691E70F11F002D443D /* AppDelegate.h */,
@@ -121,21 +120,12 @@
 		E75FD47D1E7131A7002D443D /* 封装 */ = {
 			isa = PBXGroup;
 			children = (
+				E7D0A3611E8227970020F579 /* DHBGIFHUD */,
 				E75FD47E1E7131E3002D443D /* MainBaseNetworkRequest.h */,
 				E75FD47F1E7131E3002D443D /* MainBaseNetworkRequest.m */,
 				E75C747E1E792DD200EEC65B /* MainRequestAPI.h */,
 			);
 			path = "封装";
-			sourceTree = "<group>";
-		};
-		E763CC2A1E7BCBF900602986 /* DHBGIFHUD */ = {
-			isa = PBXGroup;
-			children = (
-				E763CC2B1E7BCBF900602986 /* GiFHUD.h */,
-				E763CC2C1E7BCBF900602986 /* GiFHUD.m */,
-				E763CC2E1E7BD6B100602986 /* loading.gif */,
-			);
-			path = DHBGIFHUD;
 			sourceTree = "<group>";
 		};
 		E763CC311E7BD6CF00602986 /* TestFiles */ = {
@@ -145,6 +135,16 @@
 				E763CC331E7BD74600602986 /* RequestTestService.m */,
 			);
 			path = TestFiles;
+			sourceTree = "<group>";
+		};
+		E7D0A3611E8227970020F579 /* DHBGIFHUD */ = {
+			isa = PBXGroup;
+			children = (
+				E7D0A3621E8227970020F579 /* GiFHUD.h */,
+				E7D0A3631E8227970020F579 /* GiFHUD.m */,
+				E7D0A3641E8227970020F579 /* loading.gif */,
+			);
+			path = DHBGIFHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E75FD4761E70F11F002D443D /* LaunchScreen.storyboard in Resources */,
-				E763CC2F1E7BD6B100602986 /* loading.gif in Resources */,
+				E7D0A3661E8227970020F579 /* loading.gif in Resources */,
 				E75FD4731E70F11F002D443D /* Assets.xcassets in Resources */,
 				E75FD4711E70F11F002D443D /* Main.storyboard in Resources */,
 			);
@@ -271,11 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E763CC2D1E7BCBF900602986 /* GiFHUD.m in Sources */,
 				E75FD46E1E70F11F002D443D /* ViewController.m in Sources */,
 				E75FD46B1E70F11F002D443D /* AppDelegate.m in Sources */,
 				E75FD4801E7131E3002D443D /* MainBaseNetworkRequest.m in Sources */,
 				E75FD4681E70F11F002D443D /* main.m in Sources */,
+				E7D0A3651E8227970020F579 /* GiFHUD.m in Sources */,
 				E763CC341E7BD74600602986 /* RequestTestService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
